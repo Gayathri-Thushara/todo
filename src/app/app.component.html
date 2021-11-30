@@ -1,0 +1,14 @@
+<table border=1px>
+<th>ToDo</th>
+<th>status</th>
+<ng-container *ngFor="let x of arr">
+<tr>
+<td>{{x.task}}</td>
+<input type="button" value="done" (click)="fun1(x.Sno)">
+</tr>
+</ng-container>
+</table>
+<div>
+<input type="text" placeholder="enter the task you want to add in the list" [(ngModel)]="tt">
+<input type="button" value="add" (click)="fun()">
+</div>
